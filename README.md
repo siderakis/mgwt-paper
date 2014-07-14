@@ -1,4 +1,4 @@
 mgwt-paper
 ==========
 
-Bringing material-designed polyer-paper components to MGWT 
+Bringing material-designed polymer-paper elements to MGWT 
