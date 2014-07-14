@@ -1,13 +1,20 @@
 mgwt-paper
 ==========
 
-Bringing material-designed polymer-paper elements to MGWT 
+Bringing material-designed polymer-paper elements to MGWT.
 
-## DONE
- - Paper Button
+## DONE/IN_PROGRESS
+ - paper-button
+ - paper-slider
+ - paper-shadow
+ - paper-ripple*
+ - core-draw-panel*
  - CellList Ripples
- - General Ripple Util
- - Draw Panel
+ 
 
 ## TODO
- - FAB
+ - paper-fab
+
+
+
+*=substantial changes to api or behaviour
