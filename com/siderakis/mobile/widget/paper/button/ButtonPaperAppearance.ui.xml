@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder">
+    <ui:with field="apperance" type="com.siderakis.mobile.widget.paper.button.ButtonPaperAppearance"/>
+    <ui:with field="shadow" type="com.siderakis.mobile.widget.paper.shadow.ShadowAppearance"/>
+
+    <div ui:field="button" class="{apperance.css.button} {shadow.css.paperShadowAnimated}">
+        <div ui:field="text"/>
+        <canvas ui:field="canvas"/>
+        <div ui:field="shadowTop" class="{shadow.css.paperShadow} {shadow.css.paperShadowAnimateZZ} {shadow.css.paperShadowTopZ1}"/>
+        <div ui:field="shadowBottom" class="{shadow.css.paperShadow} {shadow.css.paperShadowAnimateZZ} {shadow.css.paperShadowBottomZ1}"/>
+    </div>
+</ui:UiBinder>

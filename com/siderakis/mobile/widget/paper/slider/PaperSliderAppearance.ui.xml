@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder">
+
+    <ui:with field="apperance2" type="com.siderakis.mobile.widget.paper.slider.PaperSliderAppearance"/>
+
+    <div ui:field="wrap" class="{apperance2.css.slider}">
+        <div ui:field="bar" class="{apperance2.css.bar}">
+            <div ui:field="progress" class="{apperance2.css.sliderProgress}"/>
+            <div ui:field="pointer" class="{apperance2.css.pointer}"/>
+        </div>
+    </div>
+</ui:UiBinder>

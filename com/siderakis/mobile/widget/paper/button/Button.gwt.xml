@@ -1,0 +1,5 @@
+<module>
+    <inherits name='com.siderakis.mobile.widget.paper.ripple.Ripple'/>
+    <inherits name='com.siderakis.mobile.widget.paper.shadow.Shadow'/>
+    <source path=""/>
+</module>
