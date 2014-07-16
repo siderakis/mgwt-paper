@@ -18,6 +18,7 @@ See: https://github.com/siderakis/mgwt/commit/53f7d2faf200bc25818c492c2ea2a66fbe
  
 
 ## TODO
+ - DEMO (modified showcase)
  - paper-fab
 
 
