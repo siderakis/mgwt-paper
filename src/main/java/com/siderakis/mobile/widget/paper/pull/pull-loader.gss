@@ -1,0 +1,8 @@
+.outer {
+}
+
+.loader {
+    background-color: #C0392B;
+    height: 4px;
+    margin: auto;
+}

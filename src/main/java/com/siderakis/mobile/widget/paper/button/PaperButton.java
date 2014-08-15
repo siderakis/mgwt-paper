@@ -3,6 +3,7 @@ package com.siderakis.mobile.widget.paper.button;
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.dom.client.Touch;
 import com.google.gwt.event.dom.client.TouchCancelEvent;
 import com.google.gwt.event.dom.client.TouchEndEvent;
@@ -51,8 +52,8 @@ public class PaperButton extends ButtonBase {
   private void onUp() {
 
     RippleHelper.up(r);
-    shadowTop.addClassName(shadowAppearance.css().paperShadowTopZ1());
     shadowTop.removeClassName(shadowAppearance.css().paperShadowTopZ2());
+    shadowTop.addClassName(shadowAppearance.css().paperShadowTopZ1());
     shadowBottom.removeClassName(shadowAppearance.css().paperShadowBottomZ2());
     shadowBottom.addClassName(shadowAppearance.css().paperShadowBottomZ1());
 
@@ -66,7 +67,7 @@ public class PaperButton extends ButtonBase {
     this.appearance = appearance;
     setElement(appearance.uiBinder().createAndBindUi(this));
     r = RippleHelper.create(canvas);
-
+    setRaisedButton(false);
 
     addTouchHandler(new TouchHandler() {
 
@@ -94,7 +95,6 @@ public class PaperButton extends ButtonBase {
         shadowTop.removeClassName(shadowAppearance.css().paperShadowTopZ1());
         shadowBottom.addClassName(shadowAppearance.css().paperShadowBottomZ2());
         shadowBottom.removeClassName(shadowAppearance.css().paperShadowBottomZ1());
-
       }
     });
 
@@ -126,4 +126,14 @@ public class PaperButton extends ButtonBase {
   }
 
 
+  public PaperButton setRaisedButton(boolean raisedButton) {
+    if (!raisedButton) {
+      shadowTop.getStyle().setDisplay(Style.Display.NONE);
+      shadowBottom.getStyle().setDisplay(Style.Display.NONE);
+    } else {
+      shadowTop.getStyle().clearDisplay();
+      shadowBottom.getStyle().clearDisplay();
+    }
+    return this;
+  }
 }
