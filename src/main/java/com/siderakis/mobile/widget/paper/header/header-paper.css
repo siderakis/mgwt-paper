@@ -1,0 +1,17 @@
+.mgwt-HeaderPanel {
+	height: 50px;
+	background-color: transparent;
+	background-image: none;
+	color: #000;
+}
+
+.mgwt-HeaderPanel canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    color: #f00;
+    z-index: -1;
+    background: #e5e9e8;
+}
