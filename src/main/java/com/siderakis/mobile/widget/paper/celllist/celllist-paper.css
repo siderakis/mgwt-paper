@@ -16,7 +16,7 @@
     left: 0;
     height: 50px;
     width: 100%;
-    color: #f00;
+    color: rgb(0, 93, 233);
     z-index: -1;
 }
 
@@ -25,9 +25,11 @@ mgwt-List-entry-first {
 }
 
 .mgwt-List-entry-canbeSelected {
+  position: relative;
   padding: 12px 16px;
   transition: background 1s;
   background: rgba(0, 0, 0, 0);
+  overflow: hidden;
 }
 .mgwt-List-entry-canbeSelected.mgwt-List-entry-selected {
   color: white;
