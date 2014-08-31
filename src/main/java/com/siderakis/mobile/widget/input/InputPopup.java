@@ -10,10 +10,14 @@ import com.google.gwt.event.dom.client.FocusHandler;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.user.client.Command;
+import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextArea;
+import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
+import com.googlecode.mgwt.dom.client.event.tap.TapHandler;
 import com.googlecode.mgwt.ui.client.widget.input.MTextArea;
+import com.siderakis.mobile.widget.paper.button.PaperButton;
 
 /**
  * User: nick
@@ -21,9 +25,9 @@ import com.googlecode.mgwt.ui.client.widget.input.MTextArea;
  */
 public class InputPopup extends MTextArea {
 
-  private final SimplePanel popupPanel = new SimplePanel();
+  private final FlowPanel popupPanel = new FlowPanel();
   private final TextArea popupTextArea = new TextArea();
-
+  private final PaperButton doneButton = new PaperButton("Done");
   public InputPopup() {
 
     addFocusHandler(new FocusHandler() {
@@ -40,8 +44,16 @@ public class InputPopup extends MTextArea {
       }
     });
 
+    doneButton.addTapHandler(new TapHandler() {
+      @Override
+      public void onTap(TapEvent event) {
+        hide();
+      }
+    });
+
     popupPanel.setStyleName(css().popup());
     popupTextArea.setStyleName(css().textArea());
+    popupPanel.add(doneButton);
     popupPanel.add(popupTextArea);
 
   }
