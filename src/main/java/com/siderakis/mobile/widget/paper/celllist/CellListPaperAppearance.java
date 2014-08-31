@@ -19,11 +19,9 @@ public class CellListPaperAppearance extends CellListAbstractAppearance {
     Resources INSTANCE = GWT.create(Resources.class);
 
     @Source({
-        "com/googlecode/mgwt/ui/client/widget/list/celllist/celllist.css", "celllist-paper.css"})
+        "celllist-paper.css"})
     Css css();
 
-    @Source("arrow.png")
-    DataResource listArrow();
   }
 
   @Override

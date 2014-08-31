@@ -51,10 +51,12 @@ public class InputPopup extends MTextArea {
       }
     });
 
+
+    doneButton.setRaisedButton(true);
     popupPanel.setStyleName(css().popup());
     popupTextArea.setStyleName(css().textArea());
-    popupPanel.add(doneButton);
     popupPanel.add(popupTextArea);
+    popupPanel.add(doneButton);
 
   }
 
