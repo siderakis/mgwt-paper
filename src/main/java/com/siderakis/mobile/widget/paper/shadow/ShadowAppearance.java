@@ -70,6 +70,8 @@ public class ShadowAppearance {
     @ClassName("paper-shadow-bottom")
     String paperShadowBottom();
 
+    @ClassName("paper-shadow-top")
+    String paperShadowTop();
   }
 
 }
