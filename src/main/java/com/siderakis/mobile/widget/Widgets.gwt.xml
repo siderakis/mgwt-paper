@@ -1,3 +1,4 @@
 <module>
     <source path="input"/>
+    <source path="paper"/>
 </module>
